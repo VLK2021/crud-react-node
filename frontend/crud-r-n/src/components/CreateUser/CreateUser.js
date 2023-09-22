@@ -19,10 +19,16 @@ const CreateUser = () => {
 
     return (
         <div className={'createUser'}>
-            <form onSubmit={handleSubmit(submit)} className={'createForm'}>
-                <input type="text" {...register('firstName')}/>
-                <input type="text" {...register('city')}/>
-                <input type="text" {...register('email')}/>
+
+            <form onSubmit={handleSubmit(submit)} className={'createForm flex'}>
+                <h1>Update user</h1>
+
+                <label>Name<input type="text" {...register('firstName')}/></label>
+
+                <label>City<input type="text" {...register('city')}/></label>
+
+                <label>Email<input type="text" {...register('email')}/></label>
+
                 <div>
                     <button>submit</button>
                 </div>

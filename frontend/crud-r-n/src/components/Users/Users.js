@@ -20,23 +20,17 @@ const Users = () => {
 
 
     return (
-        <div className={'users'}>
+        <div className={'users flex'}>
             <div className={'btn-create'}>
                 <button onClick={() => navigate('user/create')}>create user</button>
             </div>
 
             <h1>users</h1>
-            <ul>
-                <li>name</li>
-                <li>email</li>
-                <li>city</li>
-            </ul>
 
-            <hr/>
-
-            {
-                usersArr && usersArr.map(obj => <User key={obj.id} user={obj}/>)
-            }
+            <div className={'users-block'}>{
+                usersArr &&
+                usersArr.map(obj => <User key={obj.id} user={obj}/>)
+            }</div>
         </div>
     );
 };

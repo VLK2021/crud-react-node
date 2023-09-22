@@ -7,15 +7,23 @@
 }
 
 .createForm {
-    width: 40rem;
+    width: 60%;
     border-radius: 0.5rem;
     box-shadow: 0.2rem 0.2rem 0.2rem grey;
     background: snow;
-   text-align: center;
+   flex-direction: column;
     padding: 0.5rem;
 }
 
 input {
-    width: 98%;
-    margin-bottom: 0.2rem;
+    width: 100%;
+    margin: 0.2rem 0 0.2rem 0;
+    padding: 0.5rem;
+    color: midnightblue;
+    font-style: italic;
+}
+
+label{
+    width: 100%;
+    text-align: center;
 }

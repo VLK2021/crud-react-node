@@ -1,6 +1,32 @@
-.user{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.user {
+    justify-content: space-between;
+    background: gainsboro;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem grey;
+    margin-bottom: 0.7rem;
+}
 
+.user-btn-block {
+
+}
+
+.user-btn-block > button {
+    width: 3rem;
+    padding: 0.2rem;
+}
+
+.put{
+    background: yellow;
+    color: green;
+    margin-right: 0.2rem;
+}
+
+.del{
+    background: red;
+    color: snow;
+}
+
+.put, .del {
+    font-weight: bold;
 }
