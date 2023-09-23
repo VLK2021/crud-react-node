@@ -12,6 +12,7 @@
     position: absolute;
     top: 2rem;
     left: 2rem;
+    cursor: pointer;
 }
 
 .updateForm {
@@ -70,8 +71,3 @@ label {
     transform: scale(1.01, 1.01);
 }
 
-.error {
-    font-style: italic;
-    color: red;
-    font-size: 1.1rem;
-}

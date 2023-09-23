@@ -7,26 +7,51 @@
     margin-bottom: 0.7rem;
 }
 
-.user-btn-block {
+.user-firstName, .user-email, .user-city {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: midnightblue;
+}
 
+.user-firstName {
+    width: 25%;
+}
+
+.user-email {
+    width: 35%;
+    font-style: italic;
+    text-transform: lowercase;
+    font-size: 1.2rem;
+}
+
+.user-city {
+    width: 20%;
+}
+
+.user-btn-block {
+    width: 20%;
+    justify-content: space-between;
 }
 
 .user-btn-block > button {
-    width: 3rem;
+    width: 5.5rem;
     padding: 0.2rem;
 }
 
-.put{
+.put {
     background: yellow;
     color: green;
     margin-right: 0.2rem;
 }
 
-.del{
+.del {
     background: red;
     color: snow;
 }
 
 .put, .del {
     font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
 }

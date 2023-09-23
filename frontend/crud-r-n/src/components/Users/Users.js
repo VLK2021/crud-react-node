@@ -9,7 +9,6 @@ import {User} from "../User/User";
 
 const Users = () => {
     const {usersArr} = useSelector(store => store.users);
-    console.log(usersArr);
     const dispatch = useDispatch();
     const navigate = useNavigate();
 

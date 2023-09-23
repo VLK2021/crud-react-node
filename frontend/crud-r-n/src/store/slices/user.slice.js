@@ -21,12 +21,18 @@ const initialState = {
     usersArr: [],
     status: null,
     error: null,
+    userForUpdate: null,
 };
 
 const userSlice = createSlice({
     name: 'userSlice',
     initialState,
-    reducers: {},
+
+    reducers: {
+        setUserForUpdate: (state, action) => {
+            state.userForUpdate = action.payload
+        }
+    },
 
     extraReducers: builder => {
         builder
@@ -44,5 +50,11 @@ const userSlice = createSlice({
             })
     }
 });
+
+const {actions:{setUserForUpdate}} = userSlice;
+const userActions = {setUserForUpdate};
+export {
+    userActions
+}
 
 export default userSlice.reducer;

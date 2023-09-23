@@ -1,5 +1,5 @@
 .users {
-    width: 50%;
+    width: 70%;
     background: snow;
     border-radius: 0.8rem;
     padding: 0.5rem;
@@ -11,23 +11,25 @@
 .btn-create {
     width: 100%;
     text-align: center;
-
 }
 
 .btn-create > button {
-    width: 11rem;
+    width: 15rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
     background: green;
     color: yellow;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 1.1rem;
     cursor: pointer;
+    transition: 2s;
 }
 
 .btn-create > button:hover {
     background: yellow;
     color: green;
+    transform: scale(1.1, 1.1);
 }
 
 h1 {
@@ -36,7 +38,7 @@ h1 {
     text-align: center;
 }
 
-.users-block{
+.users-block {
     width: 95%;
     padding: 0.5rem;
 }
