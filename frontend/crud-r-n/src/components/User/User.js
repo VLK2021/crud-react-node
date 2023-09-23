@@ -3,7 +3,8 @@ import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
 
 import './UserStyle.css';
-import {userActions} from "../../store";
+import {getAllUsers, userActions} from "../../store";
+import {userService} from "../../services";
 
 
 const User = ({user}) => {
@@ -15,6 +16,11 @@ const User = ({user}) => {
     const put = () => {
         dispatch(userActions.setUserForUpdate(user))
         navigate(`/user/${id}`)
+    }
+
+    const dell = async () => {
+        await userService.deleteById(id);
+        dispatch(getAllUsers())
     }
 
 
@@ -29,7 +35,7 @@ const User = ({user}) => {
                     put
                 </button>
 
-                <button className={'flex del'} onClick={() => null}>
+                <button className={'flex del'} onClick={dell}>
                     delete
                 </button>
             </div>
