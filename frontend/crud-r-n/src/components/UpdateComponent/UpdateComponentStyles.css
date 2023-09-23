@@ -1,3 +1,77 @@
-.updateComponent{
+.updateComponent {
     width: 100%;
+}
+
+.updateUser-back-block > button {
+    width: 10rem;
+    padding: 0.5rem;
+    background: gainsboro;
+    box-shadow: 0.3rem 0.3rem 0.3rem grey;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.updateForm {
+    width: 60%;
+    border-radius: 0.5rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem grey;
+    background: snow;
+    flex-direction: column;
+    padding: 0.5rem;
+
+}
+
+input {
+    width: 100%;
+    margin: 0.2rem 0 0.2rem 0;
+    padding: 0.6rem 1rem;
+    color: midnightblue;
+    font-style: italic;
+    display: block;
+    border: 1px solid black;
+    box-shadow: 0.2rem 0.2rem 0.2rem grey;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+label {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: midnightblue;
+}
+
+.updateUser-btn-block {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.updateUser-btn-block > button {
+    width: 100%;
+    background: midnightblue;
+    color: snow;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.updateUser-btn-block > button:hover {
+    background: yellow;
+    color: midnightblue;
+    transform: scale(1.01, 1.01);
+}
+
+.error {
+    font-style: italic;
+    color: red;
+    font-size: 1.1rem;
 }
